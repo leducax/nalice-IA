@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA Zero Restrictions | N'Alice</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">- N'Alice -</h1>
+        <h1 class="title">Votre IA Sans Restrictions</h1>
+        <div class="chat-container">
+            <div id="chat-window">
+                <div id="output"></div>
+            </div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Posez votre question...">
+                <button id="submit-btn">Envoyer</button>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

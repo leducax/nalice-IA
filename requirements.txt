@@ -1,0 +1,8 @@
+Flask
+Flask_SQLAlchemy
+web3
+eth_account
+requests
+spacy
+download
+fr_core_news_sm

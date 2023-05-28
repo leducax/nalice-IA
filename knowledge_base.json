@@ -1,0 +1,17 @@
+{
+    "questions": [
+      {
+        "question": "Quel est ton nom ?",
+        "answer": "Je m'appelle N'Alice."
+      },
+      {
+        "question": "Quel est le sens de la vie ?",
+        "answer": "Le sens de la vie est relatif à chaque individu."
+      },
+      {
+        "question": "Quelle est la capitale de la France ?",
+        "answer": "La capitale de la France est Paris."
+      }
+    ]
+  }
+  
