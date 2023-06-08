@@ -26,3 +26,4 @@ python app.py
 
 ### Picture
 
+<img src="https://github.com/leducax/nalice-IA/blob/main/fav/nalice.png" >
