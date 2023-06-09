@@ -1,10 +1,16 @@
 body {
-    background-color: #222;
+    background-color: #111;
 }
 
 .title {
     text-align: center;
-    color: #926161;
+    color: #ff6666;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start;
 }
 
 .chat-container {
@@ -16,6 +22,8 @@ body {
     height: 400px;
     width: 1100px;
     background-color: #222222d2;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
 }
 
 #chat-window {
@@ -24,9 +32,27 @@ body {
     margin-bottom: 5px;
 }
 
+.user-avatar {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.ai-avatar {
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.user-avatar img,
+.ai-avatar img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 #output p {
     margin-bottom: 10px;
-    color: #6e4f4f;
+    color: #b37777;
 }
 
 .input-container {
@@ -43,6 +69,7 @@ body {
     background-color: #333;
     color: #fff;
     margin-top: 10px;
+    font-family: 'Arial', sans-serif;
 }
 
 #submit-btn {
@@ -55,6 +82,7 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+    font-family: 'Jim Nightshade';
 }
 
 #submit-btn:hover {
@@ -73,4 +101,55 @@ body {
 #chat-window::-webkit-scrollbar-thumb {
     background-color: #555;
     border-radius: 4px;
+}
+
+.file-container {
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 20px;
+    background-color: #222;
+    color: #fff;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Jim Nightshade';
+}
+
+.file-container h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#file-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#file-list li {
+    margin-bottom: 5px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.buttons-container button {
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: 'Jim Nightshade';
+}
+
+.buttons-container button:hover {
+    background-color: #554;
 }
