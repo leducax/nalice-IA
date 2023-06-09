@@ -5,12 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IA Zero Restrictions | N'Alice</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='fav/ico.ico') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1 class="title">- N'Alice -</h1>
+    <h1 class="title">- N'Alice -</h1>
         <h1 class="title">Votre IA Sans Restrictions</h1>
+    <div class="container">
         <div class="chat-container">
             <div id="chat-window">
                 <div id="output"></div>
@@ -20,7 +22,22 @@
                 <button id="submit-btn">Envoyer</button>
             </div>
         </div>
+        <div class="file-container">
+            <h2>Fichiers déposés :</h2>
+            <ul id="file-list"></ul>
+            <div class="buttons-container">
+                <button id="download-btn">Download</button>
+                <button id="delete-btn">Delete</button>
+                <button id="clear-btn">Clear</button>
+                <button id="open-server-btn">Open Live Server</button>
+                <input type="file" id="upload-input" multiple webkitdirectory>
+                <button id="upload-btn">Upload</button>
+              </div>
+            
+        </div>
     </div>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jszip.min.js') }}"></script>
+
 </body>
 </html>
