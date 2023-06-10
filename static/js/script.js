@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const avatar = document.createElement('div');
     avatar.className = 'avatar user-avatar';
     const logo = document.createElement('img');
-    logo.src = 'chemin_vers_logo_utilisateur.png'; // Remplace avec le chemin vers le logo de l'utilisateur
+    logo.src = './static/fav/7d80f2f1ad8a78f014778ec6d8232897.jpg'; // Remplace avec le chemin vers le logo de l'utilisateur
     logo.alt = 'Logo Utilisateur';
     avatar.appendChild(logo);
     userMessage.appendChild(avatar);
@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const avatar = document.createElement('div');
     avatar.className = 'avatar ai-avatar';
     const logo = document.createElement('img');
-    logo.src = './static/fav/nalice.png'; // Remplace avec le chemin vers le logo de l'IA
+    logo.src = './static/fav/ico.ico'; // Remplace avec le chemin vers le logo de l'IA
     logo.alt = 'Logo IA';
     avatar.appendChild(logo);
     botMessage.appendChild(avatar);
