@@ -6,3 +6,7 @@ requests
 spacy
 download
 fr_core_news_sm
+preprocess
+model
+scikit-learn
+tensorflow
