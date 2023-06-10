@@ -2,9 +2,9 @@
  - AI avec zero restrictions
 
 
-### Instal Requirements
+### Install Requirements
 
-Visual Studio
+ - Visual Studio
 
 <table aria-label="Table 1" class="table table-sm">
 <thead>
