@@ -5,39 +5,32 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-import preprocess  # module de prétraitement des données
+import preprocess
 
 app = Flask(__name__)
 
-# Chargement de la base de connaissances
 with open('knowledge_base.json', 'r') as f:
     knowledge_base = json.load(f)
 
-# Prétraitement des données d'entraînement
 preprocessor = preprocess.Preprocessor()
 questions = [pair['question'] for pair in knowledge_base['questions']]
 answers = [pair['answer'] for pair in knowledge_base['questions']]
 preprocessed_questions = preprocessor.preprocess(questions)
 
-# Création du tokenizer
 tokenizer = Tokenizer()
 tokenizer.fit_on_texts(preprocessed_questions)
 
-# Encodage des questions en séquences numériques
 encoded_questions = tokenizer.texts_to_sequences(preprocessed_questions)
 
-# Padding des séquences pour une longueur fixe
 max_sequence_length = max([len(seq) for seq in encoded_questions])
 padded_questions = pad_sequences(encoded_questions, maxlen=max_sequence_length, padding='post')
 
-# Création du modèle LSTM
 model = Sequential()
 model.add(LSTM(256, input_shape=(max_sequence_length,), return_sequences=True))
 model.add(LSTM(256))
 model.add(Dense(len(answers), activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-# Entraînement du modèle
 model.fit(padded_questions, np.array(answers), epochs=10)
 
 @app.route('/')
