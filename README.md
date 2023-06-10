@@ -73,5 +73,3 @@ python app.py
 
 ## License
 LeDucAX is made with 🖤 [Contributors](https://github.com/LeDucAX/nalice-IA/graphs/contributors). See the **License** file for more details.
-
-<img src="https://github.com/LeDucAX/nalice-IA/blob/main/assets/images/thank-u-txt.png">
