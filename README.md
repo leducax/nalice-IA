@@ -33,12 +33,20 @@
 </tbody>
 </table>
 
+- Update & Upgrade
+
 ```
-pip install -r requirements.txt
+sudo apt update -y | sudo apt upgrade -y
 ```
 
 ```
 python -m pip install --upgrade pip
+```
+
+- Requirements
+
+```
+pip install -r requirements.txt
 ```
 
 ### Error d'installations
@@ -56,3 +64,14 @@ python app.py
 ### Picture
 
 <img src="https://github.com/leducax/nalice-IA/blob/main/static/fav/nalice.png" >
+
+<img src="https://github.com/leducax/nalice-IA/blob/main/static/fav/githubreadme/gif-line.gif" width="9000px">
+
+## Supporters
+[![Stargazers repo roster for @LeDucAX/nalice-IA](https://reporoster.com/stars/dark/LeDucAX/nalice-IAnalice-IA)](https://github.com/LeDucAX/nalice-IA/stargazers)
+[![Forkers repo roster for @LeDucAX/nalice-IA](https://reporoster.com/forks/dark/LeDucAX/nalice-IA)](https://github.com/LeDucAX/nalice-IA/network/members)
+
+## License
+LeDucAX is made with 🖤 [Contributors](https://github.com/LeDucAX/nalice-IA/graphs/contributors). See the **License** file for more details.
+
+<img src="https://github.com/LeDucAX/nalice-IA/blob/main/assets/images/thank-u-txt.png">
